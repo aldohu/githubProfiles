@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lumanosimo&display=swap');
+:root {
+	--color-background: rgb(46, 2, 203);
+	--color-letter: aliceblue;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--color-background);
+	font-family: 'Geologica', sans-serif;
+	font-family: 'Inter', sans-serif;
+	font-family: 'Lumanosimo', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	flex-direction: column;
+	color: var(--color-letter);
+}
+.user-card {
+	height: 300px;
+	width: 500px;
+	display: flex;
+
+	flex-direction: row;
+	border-radius: 5px;
+	align-items: center;
+	font-family: inherit;
+	justify-content: space-around;
+	background-color: rebeccapurple;
+	font-size: 0.8rem;
+}
+h2,
+p {
+	margin-bottom: 1rem;
+}
+.image-container {
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 150px;
+
+	margin: 1rem;
+	margin-right: 2rem;
+}
+.image-container img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+	border: 5px solid var(--color-background);
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: var(--color-letter);
+	background-color: var(--color-background);
+	padding: 0.2rem;
+	border-radius: 2px;
+}
+.followers {
+	display: flex;
+	justify-content: space-around;
+}
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+.projects li {
+	margin: 0.2rem;
+}
+#user {
+	width: 400px;
+	padding: 0.5rem;
+	border: none;
+	color: var(--color-letter);
+	background-color: rebeccapurple;
+	margin: 1rem;
+	border-radius: 2px;
+	box-shadow: 2px 2px rebeccapurple;
+	color: aliceblue;
+}
+input#user::placeholder {
+	color: var(--color-letter);
+}
+#user:focus {
+	outline: none;
+}
