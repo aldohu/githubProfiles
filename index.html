@@ -12,12 +12,16 @@
 		/>
 		<script
 			src="app.js"
+			type="module"
 			defer
 		></script>
 		<title>github profiles</title>
 	</head>
 	<body>
-		<form action="#">
+		<form
+			action="#"
+			id="search-form"
+		>
 			<input
 				type="search"
 				name="user"
@@ -25,32 +29,5 @@
 				placeholder="Search a Github User"
 			/>
 		</form>
-		<div class="user-card">
-			<div class="image-container">
-				<img
-					src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-					alt=""
-				/>
-			</div>
-			<div class="text-info">
-				<h2>Lorena Lopez</h2>
-				<p class="about">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-					suscipit.
-				</p>
-				<ul class="followers">
-					<li><span>29999</span> Followers</li>
-					<li><span>10</span> Following</li>
-					<li><span>3000</span> Repos</li>
-				</ul>
-				<ul class="projects">
-					<li><a href="#">loruki-website</a></li>
-					<li><a href="#">vanila-node</a></li>
-					<li><a href="#">react-admin</a></li>
-					<li><a href="#">proshopman</a></li>
-					<li><a href="#">breking-bad-cast</a></li>
-				</ul>
-			</div>
-		</div>
 	</body>
 </html>
